@@ -12,12 +12,20 @@ export const artwork = defineType({
 		defineField({ 
 			type: "image", 
 			name: "image", 
+			description : 'Image should be in webp format and should not be larger than 1000px in width or height',
 			options: { hotspot: true } }),
 			
 		defineField({ 
 			type: "text", 
 			name: "description" 
 		}),
+
+		defineField({ 
+			type: "array", 
+			of: [{type: 'string'}], 
+			name: "tags", 
+			title : 'Tags'
+		  }),
 		
 	],
 });
