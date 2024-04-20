@@ -41,6 +41,17 @@ export const home = defineType({
 				},
 				{ type: 'image' }]
 		}),
+		
+		defineField({
+			title: 'Blood And Thorns Intro', name: 'bloodAndThornsIntro', type: 'array', of: [
+				{
+					type: 'block', styles: [
+						{ title: 'Normal', value: 'normal' },
+						{ title: 'Heading', value: 'h2' },
+					]
+				},
+			]
+		}),
 	],
 });
 
