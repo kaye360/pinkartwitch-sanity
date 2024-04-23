@@ -28,7 +28,7 @@ export const home = defineType({
 			options: {
 				sortable: true,
 			},
-			validation: rule => rule.required().length(5)
+			validation: rule => rule.required().max(5)
 		}),
 
 		defineField({
@@ -39,7 +39,8 @@ export const home = defineType({
 						{ title: 'Heading', value: 'h2' },
 					]
 				},
-				{ type: 'image' }]
+				{ type: 'image' }
+			]
 		}),
 		
 		defineField({
@@ -50,6 +51,7 @@ export const home = defineType({
 						{ title: 'Heading', value: 'h2' },
 					]
 				},
+				{ type: 'image' }
 			]
 		}),
 	],

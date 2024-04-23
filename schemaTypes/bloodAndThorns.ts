@@ -22,8 +22,10 @@ export const bloodAndThorns = defineType({
 						{ title: 'Normal', value: 'normal' },
 						{ title: 'Heading', value: 'h2' },
 					]
-				}
-		]}),
+				},
+				{ type : 'image'}
+			]
+		}),
 
 		defineField({
 			type: "image",
@@ -39,7 +41,8 @@ export const bloodAndThorns = defineType({
 						{ title: 'Normal', value: 'normal' },
 						{ title: 'Heading', value: 'h2' },
 					]
-				}
+				},
+				{ type : 'image'}
 		]}),
 
 	],
